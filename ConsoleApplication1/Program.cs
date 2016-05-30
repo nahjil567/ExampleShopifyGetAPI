@@ -135,7 +135,7 @@ namespace ConsoleApplication1
         {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls;
             var credentialCache = new CredentialCache();
-            credentialCache.Add(new Uri(url), "Basic", new NetworkCredential("***REMOVED***", "***REMOVED***"));
+            credentialCache.Add(new Uri(url), "Basic", new NetworkCredential("", ""));
             return credentialCache;
         }
 
